@@ -7,12 +7,12 @@ namespace RazeTech
         private const double DEGREES_PER_HOUR = 360.0 / 12.0;
         private const double DEGREES_PER_MINUTE = 360.0 / 60.0;
 
-        public static double MinuteAngle(this AnalogHours hours)
+        public static double MinuteAngle(this AnalogTime hours)
         {
             return hours.Minutes * DEGREES_PER_MINUTE;
         }
 
-        public static double HoursAngle(this AnalogHours hours)
+        public static double HoursAngle(this AnalogTime hours)
         {
             return hours.Hours * DEGREES_PER_HOUR;
         }
@@ -43,13 +43,13 @@ namespace RazeTech
             {
                 try
                 {
-                    AnalogHours hours = AnalogHours.FromString(args[i]);
+                    AnalogTime hours = AnalogTime.FromString(args[i]);
 
                     double hourAngle = hours.HoursAngle();
                     double minuteAngle = hours.MinuteAngle();
                     double diff = MinimumAngleDifference(hourAngle, minuteAngle);
 
-                    Console.WriteLine(args[i] + "\t" + diff);
+                    Console.WriteLine(hours.ToString() + "\t" + diff);
                 }
                 catch (FormatException ex)
                 {

@@ -4,12 +4,12 @@ using System.Text;
 
 namespace RazeTech
 {
-    struct AnalogHours
+    struct AnalogTime
     {
         public byte Hours { get; private set; }
         public byte Minutes { get; private set; }
 
-        public AnalogHours(byte hours, byte minutes)
+        public AnalogTime(byte hours, byte minutes)
         {
             bool hoursOutOfRange = hours > 12;
             bool minutesOutOfRange = minutes > 60;
@@ -33,7 +33,12 @@ namespace RazeTech
             this.Minutes = minutes;
         }
 
-        public static AnalogHours FromString(string str)
+        public override string ToString()
+        {
+            return String.Format("{0:D2}:{1:D2}", Hours, Minutes);
+        }
+
+        public static AnalogTime FromString(string str)
         {
             if (str == null)
             {
@@ -64,7 +69,7 @@ namespace RazeTech
                 minutes = byte.Parse(parts[1]);
             }
 
-            return new AnalogHours(hours, minutes);
+            return new AnalogTime(hours, minutes);
         }
     }
 }

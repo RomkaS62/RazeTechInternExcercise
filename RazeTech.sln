@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31313.79
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazeTech", "RazeTech\RazeTech.csproj", "{852B04A2-561D-4365-8FCF-81FD9B0E2B14}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeDepth", "TreeDepth\TreeDepth.csproj", "{005F1361-AE18-413D-9FC4-489DBD521779}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnalogHourAngle", "AnalogHourAngle\AnalogHourAngle.csproj", "{20D0709B-D21E-46F0-AFA7-70F77B9772A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{852B04A2-561D-4365-8FCF-81FD9B0E2B14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{852B04A2-561D-4365-8FCF-81FD9B0E2B14}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{852B04A2-561D-4365-8FCF-81FD9B0E2B14}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{852B04A2-561D-4365-8FCF-81FD9B0E2B14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{005F1361-AE18-413D-9FC4-489DBD521779}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{005F1361-AE18-413D-9FC4-489DBD521779}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{005F1361-AE18-413D-9FC4-489DBD521779}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{005F1361-AE18-413D-9FC4-489DBD521779}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20D0709B-D21E-46F0-AFA7-70F77B9772A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20D0709B-D21E-46F0-AFA7-70F77B9772A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20D0709B-D21E-46F0-AFA7-70F77B9772A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20D0709B-D21E-46F0-AFA7-70F77B9772A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
