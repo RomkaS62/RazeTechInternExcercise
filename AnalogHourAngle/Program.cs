@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace RazeTech
+namespace AnalogHourAngle
 {
     internal static class AnalogHoursExt
     {
