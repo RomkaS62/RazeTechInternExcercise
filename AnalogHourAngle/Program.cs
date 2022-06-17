@@ -14,7 +14,7 @@ namespace AnalogHourAngle
 
         public static double HoursAngle(this AnalogTime hours)
         {
-            return hours.Hours * DEGREES_PER_HOUR;
+            return hours.Hours * DEGREES_PER_HOUR + DEGREES_PER_HOUR * (hours.Minutes / 60.0);
         }
     }
 

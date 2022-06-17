@@ -11,22 +11,24 @@ namespace AnalogHourAngle
 
         public AnalogTime(byte hours, byte minutes)
         {
-            bool hoursOutOfRange = hours > 12;
-            bool minutesOutOfRange = minutes > 60;
+            bool hoursOutOfRange = hours >= 12;
+            bool minutesOutOfRange = minutes >= 60;
 
             if (hoursOutOfRange && !minutesOutOfRange)
             {
-                throw new ArgumentException("Hours cannot be greater than 12!");
+                throw new ArgumentException("Hours cannot be greater than 11!");
             }
 
             if (!hoursOutOfRange && minutesOutOfRange)
             {
-                throw new ArgumentException("Minutes cannot be greater than 60!");
+                throw new ArgumentException("Minutes cannot be greater than 59!");
             }
 
             if (hoursOutOfRange && minutesOutOfRange)
             {
-                throw new ArgumentException("Hours cannot be greater than 12 and minutes greater than 60!");
+                throw new ArgumentException(
+                    "Hours cannot be greater than 11 and minutes greater than 59!"
+                    );
             }
 
             this.Hours = hours;
